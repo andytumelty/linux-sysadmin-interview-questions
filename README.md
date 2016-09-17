@@ -16,6 +16,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
   1. [MySQL Questions](#mysql)
   1. [DevOps Questions](#devop)
   1. [Fun Questions](#fun)
+  1. [Scenarios](#scenarios)
   1. [Demo Time](#demo)
   1. [Other Great References](#references)
 
@@ -49,6 +50,8 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What is RAID? What is RAID0, RAID1, RAID5, RAID10?
 * What is a level 0 backup? What is an incremental backup?
 * Describe the general file system hierarchy of a Linux system.
+* What's the difference between a type 1 and type 2 hypervisor?
+* Can you name some hypervisors?
 
 
 ####[[⬆]](#toc) <a name='simple'>Simple Linux Questions:</a>
@@ -163,6 +166,9 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What's LD_PRELOAD and when it's used?
 * You ran a binary and nothing happened. How would you debug this?
 * What are cgroups? Can you specify a scenario where you could use them?
+* How can you determine which config file(s) a program reads when it starts up? (`strace -e open program`)
+TODO: add CPU lock question: what's actually happening, what would you do to counter it?
+TODO: add performance questions
 
 
 ####[[⬆]](#toc) <a name='expert'>Expert Linux Questions:</a>
@@ -191,6 +197,10 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * How do you stop a DDoS attack?
 * How can you see content of an ip packet?
 * What is IPoAC (RFC 1149)?
+* What information is in an IP header?
+* What information is in a TCP header?
+* How can you check the bandwidth on a linux server?
+* What "netns" feature of "ip" package is used for? Briefly explain the mechanism of it's work. How FreeBSD analog of this is called?
 
 
 ####[[⬆]](#toc) <a name='mysql'>MySQL questions:</a>
@@ -222,6 +232,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What are the advantages/disadvantages of script vs compiled program?
 * What's the relationship between continuous delivery and DevOps?
 * What are the important aspects of a system of continuous integration and deployment?
+* Can CEPH filesystem be utilised using Filesystem in User Space (FUSE) API? (yes/no)
 
 ####[[⬆]](#toc) <a name='fun'>Fun Questions:</a>
 
@@ -234,6 +245,13 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * You have deleted by error a running script, what could you do to restore it?
 * What will happen on 19 January 2038?
 
+####[[⬆]](#toc) <a name='scenarios'>Scenarios:</a>
+
+* You're getting reports from multiple users that a bastion/jumpbox for an
+environment (hosted by a cloud provider) is "slow". What questions do you ask,
+what commands do you run, and what would be your first checks? TODO: detail to
+respond to questions
+    -> Backups are saturating the management edge
 
 ####[[⬆]](#toc) <a name='demo'>Demo Time:</a>
 
